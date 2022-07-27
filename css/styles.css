@@ -834,7 +834,7 @@ a {
 .form-field {
     display: flex;
     flex-direction: column;
-    position: relative;
+    /* position: relative; */
     width: 100%;
     margin-bottom: 10px;
 }
@@ -850,10 +850,15 @@ a {
     font-size: 12px;
 }
 
+.form-input-box {
+    position: relative;
+}
+
 .form-field-icon {
     position: absolute;
     left: 12px;
-    bottom: 11px;
+    bottom: 50%;
+    transform: translateY(50%);
 
     width: 18px;
     height: 18px;
